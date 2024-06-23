@@ -1,0 +1,569 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-mode);
+}
+
+:root {
+    --color-mode: #23ca39;
+    --color-mode2: #fbff09;
+    --sec-color: #ddd;
+    --text-color: #222;
+    --maine-height: 85px;
+    --maine-transtion: 0.50s;
+    --font-size: 30px;
+    --font-size-alt: 16px;
+}
+
+
+.contener {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 80%;
+
+
+}
+
+.box {
+    display: -moz-grid-line;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.title h2 {
+
+    text-transform: uppercase;
+    box-shadow: 0 0 40px var(--color-mode);
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+/* start header */
+.header {
+
+    background-color: var(--color-mode);
+    box-shadow: 0 0 10px (--sec-color);
+    width: 100%;
+    position: relative;
+}
+
+.header .contener {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.header .logo {
+    color: var(--color-mode2);
+    font-size: var(--font-size);
+    font-weight: bold;
+    height: var(--maine-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header nav>ul {
+    display: flex;
+
+}
+
+.header nav>ul>li>a {
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    height: var(--maine-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--maine-transtion);
+
+}
+
+.header nav>ul>li>a::before {
+    content: "";
+
+    height: 10%;
+    width: 100%;
+
+    top: 0px;
+    left: -100%;
+
+
+
+}
+
+.header nav>ul>li>a:hover:before {
+    left: 0;
+    transition: var(--maine-transtion);
+}
+
+.header nav>ul>li>a:hover {
+    background-color: var(--sec-color);
+    color: var(--color-mode2);
+}
+
+
+/* global ruls */
+
+
+/* home */
+.info {
+    height: calc(100vh - 200px);
+    margin: 0 auto;
+    background-color: var(--sec-color);
+
+}
+
+.info .contener {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: large;
+    margin: 20px 0 80px 0;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 10px 3px;
+    transition: 1.5s;
+
+}
+
+
+
+th {
+    background-color: var(--color-mode);
+
+}
+
+
+
+/* footer */
+.homefooter {
+    background-color: var(--sec-color);
+    margin: 0 auto;
+
+}
+
+.homefooter .contener {
+    font-size: var(--font-size-alt);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.homefooter .box {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+
+}
+
+.homefooter .box a {
+    border: 1px solid var(--color-mode);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+}
+
+.homefooter .box a:hover {
+    background-color: var(--color-mode);
+}
+
+.homefooter .box img {
+    max-width: 90%;
+}
+
+
+/* end home */
+
+
+/* start landing */
+.landing {
+    height: calc(100vh - 50px);
+    position: relative;
+
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sec-color);
+    z-index: -1;
+
+
+
+}
+
+.landing .contener {
+    min-height: calc(100vh - 95px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.landing .text {
+    direction: rtl;
+    width: 50%;
+    padding: 100px;
+}
+
+.landing .text h1 {
+    font-size: 30px;
+}
+
+.landing .imge img {
+
+
+    max-width: 100%;
+    height: 600px;
+    box-shadow: 0 0 10px var(--color-mode);
+}
+
+.landing .imge img:hover {
+
+    box-shadow: 0 0 40px var(--color-mode);
+}
+
+
+
+
+
+
+
+/* end landind */
+
+
+
+
+/* :start features  */
+
+
+.features {
+    background-color: var(--sec-color);
+}
+
+
+.features .contener {
+
+    padding: 30px;
+
+}
+
+
+.features-item {
+    font-size: var(--font-size-alt);
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    padding: 20px;
+    box-shadow: 8px 4px 10px #867a7ae1;
+    overflow: hidden;
+
+
+}
+
+.features-item h3 {
+    font-size: var(--font-size);
+    margin: 50px;
+    position: relative;
+}
+
+.features-item h3::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: calc(100% - 400px);
+    left: 200px;
+    bottom: -20px;
+}
+
+.features-item.Quality h3::before {
+
+    background-color: var(--color-mode);
+}
+
+
+
+.features-item.Passion h3::before {
+
+    background-color: var(--color-mode2);
+}
+
+/* --------------- */
+/* :end features  */
+
+
+
+
+/* footer */
+.Aboutfototer {
+    background-color: var(--sec-color);
+}
+
+.Aboutfototer .contener {
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.Aboutfototer .box {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.Aboutfototer .contener ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Aboutfototer .contener ul li {
+    padding: 20px;
+}
+
+.Aboutfototer .contener ul li img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.Aboutfototer .contener .iso {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.Aboutfototer .contener .iso li {
+    display: flex;
+    padding: 5px;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.Aboutfototer .contener .iso li img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Properties start  */
+.Properties {
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--sec-color);
+
+}
+
+.Properties .contener {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.Properties table thead tr th {
+    text-align: center;
+    background-color: var(--color-mode);
+}
+
+.Properties table tbody tr td {
+    text-align: center;
+
+}
+
+.Properties table input {
+    height: 18px;
+    width: 18px;
+}
+
+.Properties table .click {
+    color: var(--color-mode);
+    cursor: pointer;
+}
+
+.Properties button {
+    color: black;
+    cursor: pointer;
+    font-size: var(--font-size-alt);
+    border: none;
+    width: 100px;
+    background-color: var(--color-mode);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Properties table td:hover {
+    transform: scale(1.0);
+    background-color: var(--sec-color);
+
+}
+
+/* Properties end   */
+/* start moreinfo */
+.more-info {
+
+    width: 100%;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.more-info .txt {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 100%;
+}
+
+.more-info .txt li {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 10px 0px;
+
+
+}
+
+.more-info img {
+
+    max-width: 150px;
+    margin: 0 19px;
+    box-shadow: 0 0 10px var(--text-color);
+
+
+}
+
+.more-info img:hover {
+    box-shadow: 0 0 20px var(--color-mode);
+}
+
+
+/* start form */
+
+.form {
+    position: fixed;
+    top: 20%;
+    max-width: 100%;
+    left: 5px;
+    transition: 1s;
+    z-index: 1;
+    display: none;
+    overflow: auto;
+}
+
+.form .contener {
+    background-color: #1786e0c4;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.form .box {
+    width: 50%;
+
+}
+
+.myForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.group {
+    flex: 40%;
+}
+
+.inp {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--sec-color);
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 18px;
+
+
+}
+
+.cancelbtn {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 15px;
+    border: none;
+    padding: 2px 10px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 10;
+
+}
+
+.worong {
+    border-color: red;
+}
